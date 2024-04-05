@@ -6,11 +6,11 @@
 </style>
 
 <div class="container">
-    <h1>My First PROPER (with responsive) Cloud based Web Application</h1>
-
+    <h4>Music Link: {{r}}</h4>
+    <audio controls><source src={{r}} type="audio/wav"></audio>
     <form action="/main" method="post">
-        <p><h2>Welcome to Hugging Face Ethical Test, my name is Thousand Ask. May I know your name? </h2></p>
-        <p><input type ="text" name="name"></p>
-        <p><input type="submit" value="Enter"></p>
+        <p><input type="submit" value="Main"></p>
     </form>
-</div>
+    <form action="/end" method="post">
+        <p><input type="submit" value="End"></p>
+    </form>
